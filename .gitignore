@@ -1,0 +1,26 @@
+nano .gitignore
+```
+
+Paste this:
+```
+# Haskell
+*.hi
+*.o
+*.exe
+dist/
+dist-newstyle/
+.stack-work/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
