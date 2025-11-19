@@ -28,7 +28,7 @@ ghci> decodeTextWithTree tree (encodeText morseTable "SOS")
 -- Check well-bracketed strings
 ghci> isWellBracketed "(()())"
 True
-```haskell
+```
 ## Technologies
 - Haskell
 - Functional Programming
@@ -37,7 +37,7 @@ True
 - Binary Trees
 
 ## Files
-- `Assignment2.hs` - Main implementation
-- `Types.hs` - Type definitions and morse code table
+- Assignment2.hs - Main implementation
+- Types.hs - Type definitions and morse code table
 
 
