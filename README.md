@@ -11,6 +11,33 @@ A comprehensive Haskell implementation of Morse code encoding and decoding with 
 
 ## Usage
 ```haskell
+ghci Assignment2.hs
 
+-- Encode text
+ghci> encodeText morseTable "HELLO"
+
+-- Decode morse code
+ghci> decodeText morseTable (encodeText morseTable "HELLO")
+"HELLO"
+
+-- Tree-based decoding
+ghci> let tree = ramify morseTable
+ghci> decodeTextWithTree tree (encodeText morseTable "SOS")
+"SOS"
+
+-- Check well-bracketed strings
+ghci> isWellBracketed "(()())"
+True
+```haskell
+## Technologies
+- Haskell
+- Functional Programming
+- Recursive Data Structures
+- Pattern Matching
+- Binary Trees
+
+## Files
+- `Assignment2.hs` - Main implementation
+- `Types.hs` - Type definitions and morse code table
 
 
